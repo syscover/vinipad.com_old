@@ -1,0 +1,429 @@
+@media(max-width:1500px){
+    .features_tab_inner .features_tab_left .features_tab{
+        max-width: 100%;
+        margin-right: 0px;
+        padding-left: 15px;
+        padding-right: 20px;
+    }
+    .signup_area .contact_img img{
+        right: 20px;
+        max-width: 100%;
+    }
+}
+
+@media (max-width:1199px){
+    .features_tab_inner .features_tab_left,.features_tab_inner .features_tab_right{
+        width: 100%;
+        float: none;
+        overflow: hidden;
+    }
+    .features_tab_inner .features_tab_left .features_tab li{
+        width: 48%;
+        float: left;
+        margin-left: 2%;
+    }
+    .features_tab_inner{
+        display: block;
+    }
+    .features_tab_inner .features_tab_left .features_tab{
+        overflow: hidden;
+        padding-right: 20px;
+        padding-left: 0px;
+        margin-bottom: 40px;
+    }
+    .features_tab_inner .features_tab_right .carousel-inner{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .main-nav .nav .nav-item.last{
+        margin-left: 5px;
+    }
+    .main-nav .nav .nav-item{
+        margin-right: 0px;
+    }
+    .heading-content .headline{
+        font-size: 30px;
+    }
+    .testimonial_inner_two .inner{
+        padding: 40px 10px 40px 15px;
+    }
+    .story-item .content .inner{
+        padding-left: 0px;
+        padding-right: 20px;
+    }
+    .story-item .content .desc{
+        font-size: 14px;
+        line-height: 25px;
+    }
+    .service_area .img_mocup{
+        right: 50px;
+    }
+    .service_area .reviews-carousel{
+        margin-right: 0px;
+    }
+    .related-posts .item .content {
+        padding: 30px 15px;
+    }
+    .topic_area .topic_item{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .story_content .inner h2 {
+        margin-bottom: 15px;
+    }
+    .story_content .inner {
+        padding: 0px 15px 0px 0px;
+    }
+}
+
+@media (min-width: 992px){
+    .modal-video .modal-dialog {
+        width: 720px;
+        max-width: inherit;
+    }
+}
+
+@media (max-width:991px){
+    .features_content{
+        padding-right: 0;
+        margin-bottom: 20px;
+    }
+    .signup_area .contact_img img{
+        top: 50px;
+        transform: translateY(0);
+        position: relative;
+    }
+    .footer_top .widget{
+        margin-bottom: 30px;
+    }
+    .footer_top{
+        padding-bottom: 20px;
+    }
+    .feature_blocks .feature-block {
+        padding-top: 0px;
+        padding-bottom: 50px;
+    }
+    .feature_blocks{
+        padding-bottom: 30px;
+        padding-top: 70px;
+    }
+    .story-item .content .inner{
+        padding: 50px 30px;
+    }
+    .testimonial_inner_two .inner{
+        margin-bottom: 30px;
+    }
+    .testimonial_inner_two .row{
+        margin-bottom: -30px;
+    }
+    .about_area .about_content{
+        margin-top: 40px;
+    }
+    .about_info_area .info_img img,.story_content img{
+        width: 100%;
+    }
+    .about_info_area .about_info_content{
+        padding-left: 0px;
+        margin-top: 30px;
+    }
+    .service_area .img_mocup{
+        right: 0px;
+        margin-top: 50px;
+    }
+    .related-posts .item{
+        margin-bottom: 30px;
+    }
+    .job_details_right{
+        margin-left: 0px;
+        margin-top: 60px;
+    }
+    #accordion2{
+        margin-top: 50px;
+    }
+    .promo-section .headline br,.promo-section .tagline br,.forum_area .forum_list li .forum_content br{
+        display: none;
+    }
+    .promo-section .actions .btn{
+        margin-bottom: 15px;
+    }
+    .forum_area .forum_list li .forum_content {
+        padding: 30px 30px 40px;
+        text-align: center;
+        width: 100%;
+        height: 100%;
+    }
+    .contact_message_info{
+        display: block;
+        text-align: center;
+    }
+    .contact_message_info .contact_text,.values_item{
+        margin-bottom: 25px;
+    }
+    .contact_message_info{
+        padding-top: 80px;
+    }
+    .story_content .inner{
+        padding: 50px;
+    }
+    .core_valu_area .row{
+        margin-bottom: -25px;
+    }
+    .vision_content{
+        margin-bottom: 40px;
+    }
+}
+
+@media (min-width: 768px){
+    .modal-video .modal-dialog {
+        width: 660px;
+        max-width: inherit;
+    }
+}
+
+@media (max-width:767px){
+    .features_tab_inner .features_tab_left .features_tab li{
+        width: 100%;
+        margin: 0px 0px 15px;
+    }
+    .features_tab_inner .features_tab_left .features_tab{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .signup_area .contact_img img {
+        right: 0px;
+    }
+    .sec_intro br{
+        display: none;
+    }
+    .header .logo{
+        padding: 18px 0px;
+    }
+    .main-nav .nav .nav-item a{
+        padding: 5px 0px;
+    }
+    .main-nav .navbar-collapse{
+        background: rgba(0, 0, 0, 0.6);
+        max-height: 290px;
+        overflow-y: scroll;
+    }
+    .main-nav .navbar-collapse .nav{
+        padding: 5px 20px 20px;
+    }
+    .main-nav .nav .nav-item.last{
+        margin-left: 0px;
+    }
+    .main-nav .nav .nav-item .btn-signup{
+        top: 0;
+        display: inline-block;
+        background: #1f8ceb;
+    }
+    .main-nav .nav .dropdown-menu{
+        background: #000;
+        padding: 0px 15px;
+    }
+    .feature_blocks .figure-holder.mr_50{
+        margin-right: 0px;
+    }
+    .feature_block_3 .feature-content,.feature_block_4 .feature-content{
+        margin-bottom: 20px;
+    }
+    .feature_block_4 img, .feature_block_2 img{
+        margin-left: 0;
+    }
+    .heading-content .intro br{
+        display: none;
+    }
+    .client_meta h4{
+        font-size: 18px;
+    }
+    .other_stories_area .item{
+        margin-bottom: 30px;
+    }
+    .post .meta{
+        padding-left: 0px;
+        width: 140px;
+    }
+    .post .post-content,.post .post-title{
+        padding-left: 140px;
+    }
+    .blog_signup_area .form-group .form-control{
+        width: 490px;
+    }
+    .benefit_info .benefit_item{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .job_details_left .media .media-body{
+        padding-left: 0px;
+        padding-top: 25px;
+    }
+    .job_details_left .job-details .benefits li{
+        width: 48%;
+    }
+    .job_details_left .media,.forum_area .forum_list{
+        display: block;
+    }
+    .forum_area .forum_list li{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+
+@media (min-width: 576px){
+    .modal-dialog {
+        max-width: 500px;
+        margin: 1.75rem auto;
+    }
+}
+
+@media (max-width:576px){
+    .sec_title{
+        font-size: 27px;
+        margin-bottom: 13px;
+    }
+    .features_tab_inner .features_tab_left .features_tab li{
+        padding: 25px 10px 25px 55px;
+    }
+    .features_tab_inner .features_tab_left .features_tab li .tab_icon{
+        left: 10px;
+    }
+    .features_tab_inner .features_tab_left .features_tab{
+        margin-bottom: 15px;
+    }
+    .footer-bottom,.popular-articles{
+        text-align: center;
+        display: block;
+    }
+    .footer-bottom .social_media,.articles_block .text-left{
+        text-align: center !important;
+    }
+    .footer_area .divider{
+        margin-bottom: 20px;
+    }
+    .heading-content .actions .btn-cta{
+        margin-left: auto;
+    }
+    .heading-content .headline {
+        font-size: 25px;
+        line-height: 35px;
+    }
+    .heading-content .intro{
+        font-size: 15px;
+    }
+    .banner_area {
+        height: 550px;
+    }
+    .testimonial_inner_two .inner{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .story-item .content .inner {
+        padding: 50px 15px;
+    }
+    .team_info .team_item img,.popular-articles .popular-article{
+        width: 100%;
+    }
+    .service_area .reviews-carousel .review{
+        padding: 30px;
+    }
+    .service_area .reviews-carousel .review p{
+        margin-top: 20px;
+    }
+    .client_meta .item{
+        margin-bottom: 25px;
+    }
+    .story_article_area{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .quote-container .quote{
+        padding-left: 5px;
+        padding-right: 5px;
+        font-size: 20px;
+        line-height: 35px;
+    }
+    .blog_signup_area .form-group .form-control,.blog_signup_area .form-group{
+        width: 100%;
+    }
+    .post .meta{
+        position: relative;
+    }
+    .post .post-content, .post .post-title{
+        padding-left: 0;
+    }
+    .blog_single .single_details .blog-quote{
+        padding: 45px 10px;
+    }
+    .blog_single .author-container .intro {
+        padding-left: 160px;
+    }
+    .blog_single .author-container{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .benefit_info .benefit_item{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .faq-accordion .card .card-header .btn-accordion{
+        font-size: 16px;
+        line-height: 25px;
+        padding-left: 35px;
+    }
+    .faq-accordion .card .panel-body{
+        font-size: 14px;
+        line-height: 25px;
+        padding-left: 35px;
+    }
+    .faq-accordion .card .card-header .btn-accordion span{
+        left: 12px;
+    }
+    .promo-section .headline {
+        font-size: 37px;
+        line-height: 56px;
+    }
+}
+
+@media (max-width: 480px){
+    .features_tab_inner .features_tab_left .features_tab li .tab_icon{
+        top: 0;
+        left: -5px;
+        margin-bottom: 10px;
+        position: relative;
+    }
+    .features_tab_inner .features_tab_left .features_tab li{
+        padding: 25px 10px 25px 15px;
+    }
+    .blog_signup_area .form-group .btn-primary{
+        position: relative;
+        top: 0;
+        transform: translateY(0);
+        margin-top: 20px;
+        padding: 10px 47px;
+    }
+    .blog_single .author-container .author{
+        position: relative;
+        left: 0;
+        top: 0;
+    }
+    .blog_single .author-container .intro{
+        padding-left: 0px;
+        padding-top: 40px;
+    }
+    .heading-content.mt_80{
+        margin-top: 50px;
+    }
+    .job_details_left .job-details .benefits li{
+        width: 100%;
+        margin-right: 0px;
+    }
+    .job_details_left{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .promo-section .headline {
+        font-size: 33px;
+        line-height: 45px;
+    }
+}

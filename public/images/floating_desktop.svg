@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="66px" viewBox="0 0 100 66" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.1 (44463) - http://www.bohemiancoding.com/sketch -->
+    <title>Slice 1</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group">
+            <rect id="Rectangle-4" fill="#E6ECF0" x="0" y="2.12903226" width="97.8723404" height="53.2258065"></rect>
+            <polyline id="Fill-56" fill="#1E211E" points="61.6196891 63.5242326 61.6196891 59.6824186 38.265285 59.6824186 38.265285 63.5242326 19.8170984 63.5242326 19.8170984 65.9073953 80.0678756 65.9073953 80.0678756 63.5242326 61.6196891 63.5242326"></polyline>
+            <path d="M2.93056995,55.6456744 L96.9549223,55.6456744 L96.9549223,2.90860465 L2.93056995,2.90860465 L2.93056995,55.6456744 Z M0.187046632,58.3542326 L99.6979275,58.3542326 L99.6979275,0.200046512 L0.187046632,0.200046512 L0.187046632,58.3542326 Z" id="Fill-57" fill="#1E211E"></path>
+            <path d="M5.52124352,37.2270698 L5.52124352,5.46674419 L54.9860104,5.46674419 C30.1694301,7.5587907 12.2072539,21.3466512 5.52124352,37.2270698" id="Fill-58" fill="#1E211E"></path>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="144px" height="102px" viewBox="0 0 144 102" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.1 (44463) - http://www.bohemiancoding.com/sketch -->
+    <title>Slice 1</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="1493842713_iPad" transform="translate(72.000000, 51.000000) rotate(-90.000000) translate(-72.000000, -51.000000) translate(22.000000, -20.000000)" fill-rule="nonzero">
+            <path d="M94.4029851,141.707216 L5.59701493,141.707216 C2.5,141.707216 0,139.218557 0,136.217526 L0,5.78247423 C0,2.74484536 2.53731343,0.292783505 5.59701493,0.292783505 L94.4029851,0.292783505 C97.5,0.292783505 100,2.7814433 100,5.78247423 L100,136.217526 C100,139.255155 97.5,141.707216 94.4029851,141.707216 Z" id="Shape" stroke="#000000" stroke-width="1.51515152" fill="#000000"></path>
+            <rect id="Rectangle-path" fill="#E6ECF0" x="4.6641791" y="7.68556701" width="90.6716418" height="114.66134"></rect>
+            <ellipse id="Oval" fill="#FFFFFF" cx="49.5522388" cy="132.045361" rx="6.15671642" ry="6.03865979"></ellipse>
+            <ellipse id="Oval" fill="#FFFFFF" cx="49.738806" cy="4.28195876" rx="1.97761194" ry="1.93969072"></ellipse>
+        </g>
+    </g>
+</svg>

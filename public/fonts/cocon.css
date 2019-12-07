@@ -1,0 +1,11 @@
+
+@font-face {
+  font-family: 'Cocon-Regular';
+  src:  url('./cocon/Cocon-Regular.eot?#iefix') format('embedded-opentype'),
+        url('./cocon/Cocon-Regular.otf')  format('opentype'),
+	    url('./cocon/Cocon-Regular.woff') format('woff'),
+        url('./cocon/Cocon-Regular.ttf')  format('truetype'),
+        url('./cocon/Cocon-Regular.svg#Cocon-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

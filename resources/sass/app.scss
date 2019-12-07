@@ -1,0 +1,44 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables & colors
+@import './partials/colors';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+// Fontawesome
+@import '~@fortawesome/fontawesome-free/scss/brands';
+@import '~@fortawesome/fontawesome-free/scss/regular';
+@import '~@fortawesome/fontawesome-free/scss/solid';
+@import '~@fortawesome/fontawesome-free/scss/fontawesome';
+
+// Theme styles
+@import './partials/variables';
+@import './partials/predefine';
+@import './partials/header';
+@import './partials/slider';
+@import './partials/overview';
+@import './partials/testimonial';
+@import './partials/stories';
+@import './partials/team';
+@import './partials/features';
+@import './partials/blog';
+@import './partials/contact';
+@import './partials/modal';
+@import './partials/footer';
+@import './partials/responsive';
+@import './partials/flaticon';
+@import './partials/faqs';
+
+// Material
+@import '../../vendor/syscover/pulsar-core/src/resources/sass/material/elevations';
+
+// Partials
+@import '../../vendor/syscover/pulsar-core/src/resources/sass/partials/forms';
+@import '../../vendor/syscover/pulsar-core/src/resources/sass/partials/typography';
+@import '../../vendor/syscover/pulsar-core/src/resources/sass/partials/helpers';
+@import '../../vendor/syscover/pulsar-core/src/resources/sass/partials/cookies-consent';
+
+// Modules
+@import 'modules/logo';

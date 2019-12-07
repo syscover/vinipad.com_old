@@ -1,0 +1,15 @@
+@media (max-width: 774px) {
+    header nav.main-nav .nav {
+        display: none;
+    }
+}
+@media (min-width: 775px) {
+    header nav .navbar-toggle {
+        display: none;
+    }
+}
+@media (max-width: 576px) {
+    .inner-container {
+        padding: 75px 30px;
+    }
+}

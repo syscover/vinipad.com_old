@@ -1,0 +1,154 @@
+/*============= feature_blocks css ==============*/
+.feature_blocks {
+    padding-top: 30px;
+    padding-bottom: 90px;
+    overflow: hidden;
+}
+
+.feature_blocks .feature-block {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.feature_blocks .feature-title {
+    color: #35373C;
+    margin-top: 0;
+    margin-bottom: 15px;
+    line-height: 40px;
+    font-weight: 500;
+}
+
+.feature_blocks .feature-desc {
+    padding-right: 30px;
+    font-size: 14px;
+}
+.f_btn{
+    font: 500 16px $rob;
+    color: #222;
+    position: relative;
+    display: inline-block;
+    transition: color 0.3s ease 0s;
+    margin-top: 10px;
+    &:before{
+        content: "";
+        width: 0;
+        height: 1px;
+        left: 0;
+        bottom: 0;
+        position: absolute;
+        background: #1f8ceb;
+        transition: width 0.3s ease 0s;
+    }
+    i{
+        font-size: 14px;
+        padding-left: 8px;
+        transition: padding 0.3s ease 0s;
+    }
+    &:hover{
+        color: #1f8ceb;
+        &:before{
+            width: 100%;
+        }
+        i{
+            padding-left: 15px;
+        }
+    }
+}
+
+.feature_blocks .figure-holder{
+    &.mr_50{
+        margin-right: -50px;
+    }
+    img {
+        border: 1px solid #eee;
+        -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+        -moz-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+        box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+        &.boxshadow_none{
+            box-shadow: none;
+            border: 0px;
+        }
+    }
+} 
+.feature_block_4,.feature_block_2{
+    img{
+        margin-left: -50px;
+    }
+}
+
+
+/*========== service_area css ===========*/
+.service_area{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    overflow: hidden;
+    .reviews-carousel{
+        margin-right: 60px;
+        padding-bottom: 30px;
+        .source{
+            .profile{
+                width: 60px;
+                margin-bottom: 10px;
+                border-radius: 50%;
+            }
+            .rating{
+                margin-bottom: 15px;
+                color: #1f8ceb;
+            }
+        }
+        .review{
+            border-left: none;
+            position: relative;
+            font-size: 14px;
+            padding: 30px 60px 30px 0px;
+            margin-bottom: 0px;
+            i{
+                position: absolute;
+                top: 0px;
+                color: #999ca4;
+                font-size: 18px;
+            }
+        }
+        .source{
+            .name{
+                font-size: 22px;
+                font-weight: 500;
+                line-height: 30px;
+                margin-bottom: 6px;
+                margin-top: 10px;
+                color: #202935;
+            }
+            p{
+                color: #656972;
+            }
+        }
+        .carousel-indicators{
+            bottom: 0;
+            margin-bottom: 0;
+            li{
+                background-color: #cfd0d4;
+                border: none;
+                width: 10px;
+                height: 10px;
+                margin: 0;
+                margin-right: 10px;
+                -webkit-border-radius: 50%;
+                -moz-border-radius: 50%;
+                -ms-border-radius: 50%;
+                -o-border-radius: 50%;
+                border-radius: 50%;
+                -moz-background-clip: padding;
+                -webkit-background-clip: padding-box;
+                background-clip: padding-box;
+                &.active{
+                    background: #1f8ceb;
+                }
+                
+            }
+        }
+    }
+    .img_mocup{
+        right: -100px;
+        position: relative;
+    }
+}

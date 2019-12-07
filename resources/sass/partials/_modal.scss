@@ -1,0 +1,180 @@
+/* ======= Modal ======= */
+
+.modal-budget {
+    .form-group {
+        margin-bottom: 15px;
+        position: relative;
+
+        .icon {
+            position: absolute;
+            left: 15px;
+            top: 12px;
+            color: #999ca4;
+            font-size: 20px;
+        }
+
+        input, select {
+            height: 50px;
+            padding: 6px 25px;
+            border-radius: 3px;
+            border-color: #eee;
+            font-size: 15px;
+            background: #f7fafd;
+            font-weight: 300;
+            color: rgba(36, 36, 36, 0.3);
+            box-shadow: none;
+            @include placeholder{
+                color: rgba(36, 36, 36, 0.5);
+            }
+        }
+        select {
+            appearance: none;
+            padding-left: 25px !important;
+        }
+    }
+
+    .legal-note {
+        font-size: 14px;
+        margin-bottom: 30px;
+        color: #999ca4;
+    }
+
+    .submit{
+        background: $color-primary;
+        &:hover{
+            background: $color-highlight-primary;
+        }
+    }
+}
+
+
+
+
+
+.modal-body {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    font-size: 16px;
+}
+
+.modal-body iframe {
+    max-width: 100%;
+}
+
+.modal-open{
+    .modal{
+        display: block;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s linear;
+        .modal-dialog{
+            transform: scale(0.99);
+            transition: all 0.3s linear;
+        }
+        &.show{
+            opacity: 1;
+            visibility: visible;
+            .modal-dialog{
+                transform: scale(1);
+                transition: all 0.3s linear;
+            }
+        }
+    }
+} 
+
+.modal-content {
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+}
+
+.modal-header {
+    border: none;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 45px;
+    position: relative;
+    justify-content: center !important;
+}
+
+.modal button.close {
+    font-size: 24px;
+    font-weight: 300;
+    text-shadow: none;
+    background: none;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    z-index: 10;
+    -webkit-opacity: 0.6;
+    -moz-opacity: 0.6;
+    opacity: 0.6;
+    width: 28px;
+    height: 28px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    background: #999ca4;
+    color: #fff;
+    outline: none;
+    padding: 8px;
+    padding-top: 1px;
+    margin: 0;
+}
+
+.modal button.close:hover {
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+    opacity: 1;
+}
+
+.modal-backdrop.in {
+    -webkit-opacity: 0.8;
+    -moz-opacity: 0.8;
+    opacity: 0.8;
+}
+
+.modal .modal-title {
+    font-size: 24px;
+    color: #222;
+    font-weight: 300;
+}
+
+.modal-resetpass{
+    .intro {
+        color: #656972;
+        font-size: 14px;
+    }
+    .submit{
+        background: $color-primary;
+        &:hover{
+            background: #0f82e6;
+        }
+    }
+} 
+
+.modal-resetpass .form-group {
+    margin-bottom: 15px;
+}
+
+.modal-video .modal-content {
+  background: none;
+  border: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.modal-video .modal-header {
+  padding-top: 30px;
+}

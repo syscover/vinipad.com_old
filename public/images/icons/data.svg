@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50px" height="40px" viewBox="0 0 50 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>Slice 1</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="iconfinder_big_data-03_3132433">
+            <rect id="Rectangle" fill="#C62179" x="19" y="32" width="8" height="6"></rect>
+            <path d="M46,27 L0,27 L0,2 C0,0.9 0.9,0 2,0 L44,0 C45.1,0 46,0.9 46,2 L46,27 Z" id="Path" fill="#D9DCE1"></path>
+            <path d="M46,27 L0,27 L0,31 C0,32.1 0.9,33 2,33 L44,33 C45.1,33 46,32.1 46,31 L46,27 Z" id="Path" fill="#FB2798"></path>
+            <path d="M31,37 L15,37 C13.9,37 13,37.9 13,39 L13,40 L33,40 L33,39 C33,37.9 32.1,37 31,37 Z" id="Path" fill="#FB2798"></path>
+            <path d="M43.4,24.7 L47.1,28.4" id="Path" stroke="#C62179" stroke-width="5" stroke-linecap="round"></path>
+            <circle id="Oval" fill="#FFFFFF" cx="36" cy="18" r="10"></circle>
+            <path d="M14,8 L14,14" id="Path" stroke="#FFFFFF" stroke-width="2"></path>
+            <path d="M19,13 L20,13 C20.6,13 21,12.6 21,12 L21,10 C21,9.4 20.6,9 20,9 L19,9 C18.4,9 18,9.4 18,10 L18,12 C18,12.6 18.4,13 19,13 Z" id="Path" stroke="#FFFFFF" stroke-width="2"></path>
+            <path d="M18,16 L18,22" id="Path" stroke="#FFFFFF" stroke-width="2"></path>
+            <path d="M14,16 L14,22" id="Path" stroke="#FFFFFF" stroke-width="2"></path>
+            <path d="M23,21 L24,21 C24.6,21 25,20.6 25,20 L25,18 C25,17.4 24.6,17 24,17 L23,17 C22.4,17 22,17.4 22,18 L22,20 C22,20.6 22.4,21 23,21 Z" id="Path" stroke="#FFFFFF" stroke-width="2"></path>
+            <path d="M25,8 L25,14" id="Path" stroke="#FFFFFF" stroke-width="2"></path>
+            <path d="M31,13 L32,13 C32.6,13 33,12.6 33,12 L33,10 C33,9.4 32.6,9 32,9 L31,9 C30.4,9 30,9.4 30,10 L30,12 C30,12.6 30.4,13 31,13 Z" id="Path" stroke="#FB2798" stroke-width="2"></path>
+            <path d="M30,16 L30,22" id="Path" stroke="#FB2798" stroke-width="2"></path>
+            <path d="M35,21 L36,21 C36.6,21 37,20.6 37,20 L37,18 C37,17.4 36.6,17 36,17 L35,17 C34.4,17 34,17.4 34,18 L34,20 C34,20.6 34.4,21 35,21 Z" id="Path" stroke="#FB2798" stroke-width="2"></path>
+            <path d="M37,8 L37,14" id="Path" stroke="#FB2798" stroke-width="2"></path>
+            <circle id="Oval" stroke="#C62179" stroke-width="3" stroke-linecap="square" cx="36.5" cy="17.5" r="10"></circle>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,96 @@
+/*================= footer_area css =================*/
+.footer_area{
+    background: #242833;
+}
+.footer_top{
+    padding-top: 100px;
+    padding-bottom: 50px;
+    .f_widget{
+        font-size: 22px;
+        color: #fff;
+        margin-bottom: 18px;
+    }
+    .company_widget{
+        .f_log{
+            margin-bottom: 22px;
+            span{
+                font-size: 24px;
+                color: #fff;
+                vertical-align: middle;
+                padding-left: 8px;
+            }
+        }
+        .contact_inner{
+            .icon_title_holder{
+                display: flex;
+                align-items: flex-start;
+                margin-bottom: 6px;
+                .icon_holder{
+                    font-size: 18px;
+                    color: #8c91a0;
+                    padding-right: 15px;
+                }
+                .icon_title{
+                    flex: 1;
+                    font-size: 14px;
+                    line-height: 24px;
+                    font-style: normal;
+                    font-weight: 400;
+                    letter-spacing: 0.5px;
+                    color: #8c91a0;
+                }
+            }
+        }
+    }
+    .about_widget{
+        .footer-menu{
+            li{
+                a{
+                    font-size: 14px;
+                    margin-bottom: 5px;
+                    color: #8c91a0;
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}
+.divider{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #2d3343;
+}
+.footer-bottom{
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 28px;
+    .copyright{
+        font-size: 13px;
+        color: #707689;
+        line-height: 40px;
+    }
+    .social_media{
+        flex: 1;
+        text-align: right;
+        margin-bottom: 0px;
+        li{
+            a{
+                width: 40px;
+                height: 40px;
+                display: inline-block;
+                border-radius: 50%;
+                text-align: center;
+                line-height: 40px;
+                font-size: 12px;
+                background: #2c313f;
+                color: #fff;
+                transition: all 0.2s ease 0s;
+                &:hover{
+                    background: #1f8ceb;
+                }
+            }
+        }
+    }
+}

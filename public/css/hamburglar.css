@@ -1,0 +1,53 @@
+.hamburglar {
+    /*transform: scale(0.6);*/
+    position: relative;
+    display: block;
+    width: 64px;
+    height: 64px;
+    -webkit-touch-callout: none;
+    user-select: none;
+}
+.hamburglar #top, .hamburglar #bottom {
+    transform-origin: 34px 2px;
+    transform: rotate(0deg);
+    transition: all 513.33333ms cubic-bezier(0.8, -1.1, 0.5, 1.9);
+}
+.hamburglar #top, .hamburglar #bottom {
+    position: absolute;
+    display: block;
+    height: 4px;
+    width: 36px;
+    border-radius: 2px;
+    background: rgb(255,255,255);
+}
+.hamburglar #top {
+    top: 19px;
+    left: 14px;
+}
+.hamburglar #bottom {
+    top: 41px;
+    left: 14px;
+}
+.hamburglar.is-closed #top {
+    transform: translateX(-4.5px) rotate(-45deg);
+}
+.hamburglar.is-closed #bottom {
+    transform: translateX(-4.5px) rotate(45deg);
+}
+.hamburglar svg {
+    cursor: pointer;
+    overflow: visible;
+}
+.hamburglar path, .hamburglar line {
+    stroke: rgb(255,255,255);
+    stroke-linecap: round;
+}
+.hamburglar #circle {
+    stroke-dasharray: 1 100 32 300;
+    stroke-dashoffset: 101;
+    transition: all 770ms ease;
+}
+.hamburglar.is-closed #circle {
+    stroke-dasharray: 0 100 190 300;
+    stroke-dashoffset: 1;
+}
