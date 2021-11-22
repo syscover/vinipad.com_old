@@ -80,13 +80,25 @@
         </style>
     </noscript>
 
+    @if(!isset($showBanner) || $showBanner == true)
+    <!-- Google ReCAPTCHA v3 -->
+    <script src="https://www.google.com/recaptcha/api.js?render={{ env('GOOGLE_RECAPTCHA_SITE_KEY_V3') }}"></script>
+    <style type="text/css">
+        .grecaptcha-badge
+        {
+            z-index: 30;
+            visibility: hidden;
+        }
+    </style>
+    @endif
+
     @yield('head')
 
 </head>
 
 <body>
     <div id="sys_body-wrapper">
-        @if(! isset($showBanner) || $showBanner == true)
+        @if(!isset($showBanner) || $showBanner == true)
             <div class="vin_fullscreen-form">
                 <div class="vin_fullscreen-form__tab">
                     <a>{{ trans('web.fullscreen_form_tab') }} <img src="{{ asset('images/tab_rocket.svg') }}" alt=""></a>
@@ -370,42 +382,63 @@
                         required: '{{ trans('web.fullscreen_form_phone_validation') }}'
                     }
                 },
-                submitHandler: function(){
+                submitHandler: function()
+                {
+                    @if(!isset($showBanner) || $showBanner == true)
+                    // Google ReCAPTCHA v3
+                    grecaptcha.ready(
+                        function()
+                        {
+                            grecaptcha.execute('{{ env('GOOGLE_RECAPTCHA_SITE_KEY_V3') }}', {action: 'vin_quote_form_submit'}).then(
+                                function(token)
+                                {
+                                    $('#vin_quote-form')
+                                        .prepend('<input type="hidden" name="token" value="' + token + '">')
+                                        .prepend('<input type="hidden" name="action" value="vin_quote_form_submit">')
+                                    ;
+                    @endif
 
-                    $('.vin_fullscreen-form .vin_fade-submit')
-                        .fadeOut(300, function(){
-                            $(this)
-                                .html('<p class="sys_aligncenter">{{ trans('web.contact_form_process') }}</p><div class="sys_progress-bar"><div class="sys_progress-bar__progress"></div></div>')
-                                .fadeIn(300);
-                        });
+                                    $('.vin_fullscreen-form .vin_fade-submit').fadeOut(300,
+                                        function()
+                                        {
+                                            $(this)
+                                                .html('<p class="sys_aligncenter">{{ trans('web.contact_form_process') }}</p><div class="sys_progress-bar"><div class="sys_progress-bar__progress"></div></div>')
+                                                .fadeIn(300);
+                                        }
+                                    );
 
-                    $.ajax({
-                        dataType: 'json',
-                        type: 'POST',
-                        url: '{{ nt_route('sendQuoteEmail-'.user_lang()) }}',
-                        data: $('#vin_quote-form').serialize(),
-                        success: function (data) {
-                            if(data.status == 'success')
-                            {
-                                $('.vin_fullscreen-form .vin_fade-submit')
-                                    .fadeOut(300, function(){
-                                        $(this)
-                                            .html('<p class="sys_aligncenter">{{ trans('web.contact_form_success') }}</p>')
-                                            .fadeIn(300);
+                                    $.ajax({
+                                        dataType: 'json',
+                                        type: 'POST',
+                                        url: '{{ nt_route('sendQuoteEmail-'.user_lang()) }}',
+                                        data: $('#vin_quote-form').serialize(),
+                                        success: function (data) {
+                                            if(data.status == 'success')
+                                            {
+                                                $('.vin_fullscreen-form .vin_fade-submit')
+                                                    .fadeOut(300, function(){
+                                                        $(this)
+                                                            .html('<p class="sys_aligncenter">{{ trans('web.contact_form_success') }}</p>')
+                                                            .fadeIn(300);
+                                                    });
+                                            }
+                                            else
+                                            {
+                                                $('.vin_fullscreen-form .vin_fade-submit')
+                                                    .fadeOut(300, function(){
+                                                        $(this)
+                                                            .html('<p class="sys_aligncenter">{{ trans('web.contact_form_error') }}</p>')
+                                                            .fadeIn(300);
+                                                    });
+                                            }
+                                        }
                                     });
-                            }
-                            else
-                            {
-                                $('.vin_fullscreen-form .vin_fade-submit')
-                                    .fadeOut(300, function(){
-                                        $(this)
-                                            .html('<p class="sys_aligncenter">{{ trans('web.contact_form_error') }}</p>')
-                                            .fadeIn(300);
-                                    });
-                            }
+                    @if(!isset($showBanner) || $showBanner == true)
+                                }
+                            );
                         }
-                    });
-
+                    );
+                    @endif
                 }
             });
 
@@ -420,6 +453,12 @@
                 {
                     ga('send', 'event', 'click', 'clickGetVinipad');
                 }
+
+                @if(!isset($showBanner) || $showBanner == true)
+                // Google ReCAPTCHA v3
+                var $grecaptcha_badge = $('.grecaptcha-badge');
+                $grecaptcha_badge.css('visibility', ($grecaptcha_badge.css('visibility') == 'hidden' ? 'visible' : 'hidden'));
+                @endif
             });
         });
     </script>

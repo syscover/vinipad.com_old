@@ -61,6 +61,16 @@
     <link rel="stylesheet" href="{{ asset('vendor/flag-css/css/flag-css.css') }}">
     <link rel="stylesheet" href="{{ asset('css/hamburglar.css') }}">
 
+    <!-- Google ReCAPTCHA v3 -->
+    <script src="https://www.google.com/recaptcha/api.js?render={{ env('GOOGLE_RECAPTCHA_SITE_KEY_V3') }}"></script>
+    <style type="text/css">
+        .grecaptcha-badge
+        {
+            z-index: 30;
+            visibility: hidden;
+        }
+    </style>
+
     @yield('head')
 
     <style>
@@ -401,41 +411,58 @@
                         required: '{{ trans('web.fullscreen_form_phone_validation') }}'
                     }
                 },
-                submitHandler: function(){
+                submitHandler: function()
+                {
+                    // Google ReCAPTCHA v3
+                    grecaptcha.ready(
+                        function()
+                        {
+                            grecaptcha.execute('{{ env('GOOGLE_RECAPTCHA_SITE_KEY_V3') }}', {action: 'vin_quote_form_submit'}).then(
+                                function(token)
+                                {
+                                    $('#vin_quote-form')
+                                        .prepend('<input type="hidden" name="token" value="' + token + '">')
+                                        .prepend('<input type="hidden" name="action" value="vin_quote_form_submit">')
+                                    ;
 
-                    $('.vin_fullscreen-form .vin_fade-submit')
-                        .fadeOut(300, function(){
-                            $(this)
-                                .html('<p class="sys_aligncenter">{{ trans('web.contact_form_process') }}</p><div class="sys_progress-bar"><div class="sys_progress-bar__progress"></div></div>')
-                                .fadeIn(300);
-                        });
 
-                    $.ajax({
-                        dataType: 'json',
-                        type: 'POST',
-                        url: '{{ nt_route('sendQuoteEmail-'.user_lang()) }}',
-                        data: $('#vin_quote-form').serialize(),
-                        success: function (data) {
-                            if(data.status == 'success')
-                            {
-                                $('.vin_fullscreen-form .vin_fade-submit')
-                                    .fadeOut(300, function(){
-                                        $(this)
-                                            .html('<p class="sys_aligncenter">{{ trans('web.contact_form_success') }}</p>')
-                                            .fadeIn(300);
+                                    $('.vin_fullscreen-form .vin_fade-submit')
+                                        .fadeOut(300, function(){
+                                            $(this)
+                                                .html('<p class="sys_aligncenter">{{ trans('web.contact_form_process') }}</p><div class="sys_progress-bar"><div class="sys_progress-bar__progress"></div></div>')
+                                                .fadeIn(300);
+                                        });
+
+                                    $.ajax({
+                                        dataType: 'json',
+                                        type: 'POST',
+                                        url: '{{ nt_route('sendQuoteEmail-'.user_lang()) }}',
+                                        data: $('#vin_quote-form').serialize(),
+                                        success: function (data) {
+                                            if(data.status == 'success')
+                                            {
+                                                $('.vin_fullscreen-form .vin_fade-submit')
+                                                    .fadeOut(300, function(){
+                                                        $(this)
+                                                            .html('<p class="sys_aligncenter">{{ trans('web.contact_form_success') }}</p>')
+                                                            .fadeIn(300);
+                                                    });
+                                            }
+                                            else
+                                            {
+                                                $('.vin_fullscreen-form .vin_fade-submit')
+                                                    .fadeOut(300, function(){
+                                                        $(this)
+                                                            .html('<p class="sys_aligncenter">{{ trans('web.contact_form_error') }}</p>')
+                                                            .fadeIn(300);
+                                                    });
+                                            }
+                                        }
                                     });
-                            }
-                            else
-                            {
-                                $('.vin_fullscreen-form .vin_fade-submit')
-                                    .fadeOut(300, function(){
-                                        $(this)
-                                            .html('<p class="sys_aligncenter">{{ trans('web.contact_form_error') }}</p>')
-                                            .fadeIn(300);
-                                    });
-                            }
+                                }
+                            );
                         }
-                    });
+                    );
 
                 }
             });
@@ -450,6 +477,13 @@
                 if(fullscreenForm.hasClass('sys_expanded')) {
                     ga('send', 'event', 'click', 'clickGetVinipad');
                 }
+
+                // Google ReCAPTCHA v3
+                var $grecaptcha_badge = $('.grecaptcha-badge');
+                $grecaptcha_badge.css('visibility', ($grecaptcha_badge.css('visibility') == 'hidden' ? 'visible' : 'hidden'));
+                // Fix de caja de búsqueda de Algolia para que no tape al formulario fullscreen - Octavio
+                var $header_default = $('header.default');
+                $header_default.css('z-index', ($header_default.css('z-index') == '0' ? 'auto' : '0'));
             });
         });
     </script>

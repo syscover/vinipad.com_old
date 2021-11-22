@@ -1,3 +1,5 @@
+@php $showBanner = false; // Para no tener dos formularios a la vez en la página de contacto, ya que no pueden convivir los reCAPTCHA v2 y v3 - Octavio @endphp
+
 @extends('web.layouts.default')
 
 @section('title', __('web.contact_meta_title'))

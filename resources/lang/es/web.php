@@ -59,7 +59,7 @@ return [
     'fullscreen_form_tab'                       => 'Solicitar presupuesto',
     'fullscreen_form_title'                     => 'Déjanos tus datos y te mandamos una propuesta personalizada',
     'fullscreen_form_restaurant'                => 'Nombre del restaurante u hotel',
-    'fullscreen_form_restaurant_validation'     => 'Por favor indique el nombre de tu establecimiento.',
+    'fullscreen_form_restaurant_validation'     => 'Por favor indica el nombre de tu establecimiento.',
     'fullscreen_form_name'                      => 'Tu nombre',
     'fullscreen_form_name_validation'           => 'Por favor indica tu nombre.',
     'fullscreen_form_email'                     => 'Tu email',
